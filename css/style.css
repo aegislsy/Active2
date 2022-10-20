@@ -19,7 +19,6 @@ img {
 
 .container {
   width: 100vw;
-  height: 100vh;
   margin: 0 auto;
   text-align: center;
   color: #2a1c33;
@@ -71,7 +70,7 @@ img {
 .coupon {
   width: 100vw;
   background-color: #f6dde3;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .coupon__wrap {
   display: grid;
@@ -85,7 +84,7 @@ img {
 .product {
   width: 100vw;
   background-color: #efedf8;
-  padding: 2rem;
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -124,13 +123,17 @@ footer > ul > li {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .product {
+  .product__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    width: 860px;
   }
   footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
   }
 }
